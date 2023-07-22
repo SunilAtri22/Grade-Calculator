@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    height: 100%;
+    width: 100%;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+      background-color: rgb(255, 233, 205);
+  }
+  
+  .fixed-header{
+    position: absolute;
+    top : 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    overflow: hidden;
+    background:black; 
+    color: white;
+  }
+  
+  .container{
+    position: absolute;
+    top : 50px;
+    bottom : 40px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+  }
+  
+  .fixed-footer{
+    position: absolute;
+    bottom : 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    overflow: hidden;
+    background:black;
+    color: white;
+  }
+  
+  .all-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .details{
+      margin-top: 20px;
+      text-align:center;
+  }
+  
+  .student{
+      margin-top: 5px;
+      padding: 6px;
+      outline: none;
+  }
+  
+  .flex{
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+  
+  li{
+      margin: 12px;
+  }
+  
+  .head3{
+      text-decoration:underline;
+  }
+  
+  .courses{
+      padding: 7px;
+      margin-top: 6px;
+      outline: none;  
+  }
+  
+  table{
+      margin-top: 20px;
+  }
+  
+  td, th{
+      padding: 10px 15px;
+      border: 1px solid black;
+  }
+  th{
+      background: goldenrod;
+      color: black;
+  }
+  
+  .submitBtn{
+  
+      margin: 15px auto;
+      display: block;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 20px;
+      background : goldenrod;
+      font-size: 1.0rem;
+      box-shadow: 3px 3px rgb(115, 113, 113);
+  }
+  
+  .submitBtn:hover{
+      cursor: pointer;
+      background: rgb(196, 148, 26);
+  }
+  
+  
+  
+  
+  

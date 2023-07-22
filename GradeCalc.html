@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="gradeCalc.css">
+    <script src="GradeScript.js" defer></script>
+</head>
+
+<body>
+    <div class="fixed-header all-center">
+        <h2>Grade Calculator</h2>
+      </div>
+      <div class="container">
+        <form onsubmit="return calculate()">
+          <div class="details">
+            <h3 class="head3">Student Details</h3>
+            <div class="flex">
+              <label>Enter Name : <input type="text" class="student" required id="name"></label>
+    
+              <label>Enter USN : <input type="text" class="student" required></label>
+            </div>
+          </div>
+          <div class="flex">
+            <div>
+              <h3 class="head3">Courses</h3>
+              <ol>
+                <li>
+                  <label>Management & Entrepreneurship</label>
+                  <br>
+                  <input type="number" placeholder="enter marks" id="course1" class="courses">
+                </li>
+    
+                <li>
+                  <label> Operating System</label>
+                  <br>
+                  <input type="number" placeholder="enter marks" id="course2" class="courses">
+                </li>
+    
+                <li>
+                  <label>Computer Networks</label>
+                  <br>
+                  <input type="number" placeholder="enter marks" id="course3" class="courses">
+                </li>
+    
+                <li>
+                  <label>Software Engineering</label>
+                  <br>
+                  <input type="number" placeholder="enter marks" id="course4" class="courses">
+                </li>
+    
+                <li>
+                  <label>Web Technologies</label>
+                  <br>
+                  <input type="number" placeholder="enter marks" id="course5" class="courses">
+                </li>
+              </ol>
+    
+            </div>
+            <div class="result">
+              <h3 class="head3">Result Updates</h3>
+              <table>
+                <tr>
+                  <th>Total Marks :</th>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <th>Marks Obtained :</th>
+                  <td id="marksObtained"></td>
+                </tr>
+                <tr>
+                  <th>Percentage :</th>
+                  <td id="percent"></td>
+                </tr>
+                <tr>
+                  <th>Grade :</th>
+                  <td id="grade"></td>
+                </tr>
+                <tr>
+                  <th>Status :</th>
+                  <td id="status"></td>
+                </tr>
+              </table>
+    
+            </div>
+          </div>
+    
+          <input type="submit" value="Get Result" class="submitBtn">
+        </form>
+      </div>
+    
+      <div class="fixed-footer all-center">
+        copyright &copy; myGradeCalc
+      </div>
+      
+</body>
+
+</html>
